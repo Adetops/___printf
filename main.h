@@ -4,15 +4,15 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-#define unused(x) (void)(x)
+#define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
 /* Defining FLAGS */
-#define MINUS_F 1
-#define PLUS_F 2
-#define ZERO_F 4
-#define HASH_F 8
-#define SPACE_F 16
+#define F_MINUS 1
+#define F_PLUS 2
+#define F_ZERO 4
+#define F_HASH 8
+#define F_SPACE 16
 
 /* define Sizes */
 #define SHORT_S 2
