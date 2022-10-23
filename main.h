@@ -7,11 +7,11 @@
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 /* Defining FLAGS */
-=======
+/* ======= */
 /* FLAGS */
->>>>>>> ef4160d7828e0ef4d10385a6b19fedec72a6f8ac
+/* >>>>>>> ef4160d7828e0ef4d10385a6b19fedec72a6f8ac */
 #define F_MINUS 1
 #define F_PLUS 2
 #define F_ZERO 4
@@ -19,20 +19,20 @@
 #define F_SPACE 16
 
 /* define Sizes */
-#define S_LONG 2
-#define S_SHORT 1
+#define LONG_S 2
+#define SHORT_S 1
 
 /**
  * struct fmt - Struct op
  * @fmt: The format.
  * @fn: associate function pointer
  */
-struct fmt
+typedef struct fmt
 {
 	char fmt;
 	int (*fn)(va_list, char[], int, int, int, int);
 
-};
+}fmt;
 
 /**
  * typedef struct fmt fmt_t - Struct op
